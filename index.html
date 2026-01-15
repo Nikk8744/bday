@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-card">
+            <h1 class="welcome-title">Do you want to see something? 🫣</h1>
+            <div class="welcome-buttons">
+                <button class="btn-yes">Yes 💖</button>
+                <button class="btn-definitely">Definitely Yes! 🎂</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wordle Game Screen -->
+    <div id="wordle-game" class="wordle-screen hidden">
+        <div class="wordle-container">
+            <h1 class="wordle-title">Guess the Word! 🎯</h1>
+            <p class="wordle-hint">Hint: Look at me(doblazz) 😉 ...7 letters 💖. You can guess it easily</p>
+            <p class="wordle-instruction">Come on, you know this one! 😏�</p>
+
+            <div class="wordle-grid" id="wordle-grid">
+                <!-- 5 rows × 7 tiles -->
+            </div>
+
+            <div class="wordle-message" id="wordle-message"></div>
+
+            <div class="wordle-keyboard" id="wordle-keyboard">
+                <div class="keyboard-row">
+                    <button class="key" data-key="Q">Q</button>
+                    <button class="key" data-key="W">W</button>
+                    <button class="key" data-key="E">E</button>
+                    <button class="key" data-key="R">R</button>
+                    <button class="key" data-key="T">T</button>
+                    <button class="key" data-key="Y">Y</button>
+                    <button class="key" data-key="U">U</button>
+                    <button class="key" data-key="I">I</button>
+                    <button class="key" data-key="O">O</button>
+                    <button class="key" data-key="P">P</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key" data-key="A">A</button>
+                    <button class="key" data-key="S">S</button>
+                    <button class="key" data-key="D">D</button>
+                    <button class="key" data-key="F">F</button>
+                    <button class="key" data-key="G">G</button>
+                    <button class="key" data-key="H">H</button>
+                    <button class="key" data-key="J">J</button>
+                    <button class="key" data-key="K">K</button>
+                    <button class="key" data-key="L">L</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key key-large" data-key="Enter">ENTER</button>
+                    <button class="key" data-key="Z">Z</button>
+                    <button class="key" data-key="X">X</button>
+                    <button class="key" data-key="C">C</button>
+                    <button class="key" data-key="V">V</button>
+                    <button class="key" data-key="B">B</button>
+                    <button class="key" data-key="N">N</button>
+                    <button class="key" data-key="M">M</button>
+                    <button class="key key-large" data-key="Backspace">⌫</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <canvas id="hearts-canvas"></canvas>
+            <div class="hero-content">
+                <h1 class="hero-title">Happy Birthday 🎂💖💕</h1>
+                <p class="hero-subtitle">To my Cobblerrrr</p>
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Message Section -->
+        <section id="love-message" class="love-message">
+            <div class="container">
+                <div class="message-card">
+                    <h2 class="section-title">💗 Hey Cobblerrrr 🎂</h2>
+                    <p class="message-text typewriter">
+                        You know i'm not good at expressing my feelings but i want you to know you mean a lot to me.
+                        Every moment with you feels like a beautiful dream I never want to wake up from.
+                        I just love how you look at me when i make a silly joke or jab mai terz mazak uda rha hota and
+                        you make that face😒, I love it 😁 or when you make a dirty joke and you think i didn't get it
+                        and you laugh at me 😂😂.
+                        Happy birthday to the most amazing and funny (i'm being sarcastic😉) person I know.
+                        🕯️
+                        Here's to many more beautiful memories together. I love you more than words can express. 💖
+                    </p>
+                    <div class="message-signature">Your doblazz, ❤️</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Cards Section -->
+        <section id="memory-cards" class="memory-cards">
+            <div class="container">
+                <h2 class="section-title">💕 Our Beautiful Moments 📸</h2>
+                <div class="cards-grid">
+                    <div class="memory-card" data-animate>
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&h=400&fit=crop"
+                                alt="First Date">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Our First Date</h3>
+                            <p class="card-description">The day I talked too much. I remember it so well cuz i had never
+                                talked itna with anyone. You were looking so
+                                cute and i was nervous 😅.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card" data-animate>
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop"
+                                alt="Beach Sunset">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">The Rasmalai</h3>
+                            <p class="card-description"> On my birthday you brought rasmalai and i was so happy, that
+                                was something i'll never forget.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card" data-animate>
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop"
+                                alt="Cozy Evening">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">31st December</h3>
+                            <p class="card-description">When you bought that flower and i knew what it was for, and i
+                                was just andar se ekdum happy happy happy.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card" data-animate>
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=400&fit=crop"
+                                alt="Adventure">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Walk Way</h3>
+                            <p class="card-description">All the nights that we walked there listening to songs making
+                                jokes, laughing 😂😂 its the best.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="memory-card" data-animate>
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=600&h=400&fit=crop"
+                                alt="Laughter">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Endless Laughter</h3>
+                            <p class="card-description">You make me laugh like no one else. Your joy is contagious.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card" data-animate>
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=600&h=400&fit=crop"
+                                alt="Love">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Every Day With You</h3>
+                            <p class="card-description">Each day together is a gift I treasure. You are my everything.
+                            </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <!-- <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">💖 Our Journey Together 💖</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-date">January 2023</div>
+                        <div class="timeline-content">
+                            <h3>The Day We Met</h3>
+                            <p>A chance encounter that changed everything. I'll never forget the moment our eyes met.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-date">March 2023</div>
+                        <div class="timeline-content">
+                            <h3>Our First "I Love You"</h3>
+                            <p>Three little words that meant the world. My heart was racing, but I knew it was true.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-date">July 2023</div>
+                        <div class="timeline-content">
+                            <h3>Summer Getaway</h3>
+                            <p>Our first trip together. Adventures, laughter, and falling even more in love.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-date">December 2023</div>
+                        <div class="timeline-content">
+                            <h3>First Year Together</h3>
+                            <p>365 days of love, growth, and beautiful memories. Here's to forever.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-date">Today</div>
+                        <div class="timeline-content">
+                            <h3>Your Special Day</h3>
+                            <p>Celebrating you and all the joy you bring to my life. Happy Birthday, my love!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <!-- Surprise Section -->
+        <section id="surprise" class="surprise-section">
+            <div class="container">
+                <h2 class="section-title">💝 I Have a Surprise for You... 🎁</h2>
+                <button class="surprise-btn" id="surprise-btn">
+                    <span class="btn-text">Click to Reveal</span>
+                    <span class="btn-heart">💝</span>
+                </button>
+                <div class="surprise-content" id="surprise-content">
+                    <!-- <img src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?w=800&q=80" alt="Surprise!"
+                        class="surprise-image"> -->
+                    <img src="./images/her.jpeg" alt="Surprise!"
+                        class="surprise-image">
+                </div>
+                <canvas id="confetti-canvas"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
